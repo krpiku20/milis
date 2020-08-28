@@ -22,7 +22,7 @@ $nowDate = time();
                             <span class="icon_heart_alt"></span>
                         </div>
                         <?php }} ?>
-                        <?php if(round(($nowDate - $postDate)/(60*60*24)) <= 3){  ?>
+                        <?php if(round(($nowDate - $postDate)/(60*60*24)) <= 4){  ?>
                         <a target="_blank" href="<?php echo base_url();  ?>product_details?product=<?php echo $f['id'];  ?>">
                             <img class = "lazy" src="<?php echo $f['full_picture'];?>" height="465" width="100%">
                         </a>
@@ -40,7 +40,7 @@ $nowDate = time();
                                     <span class="arrow_expand"></span>
                                 </a>
                             </li>
-                            <?php if(round(($nowDate - $postDate)/(60*60*24)) <= 3){  ?>
+                            <?php if(round(($nowDate - $postDate)/(60*60*24)) <= 4){  ?>
                             <li>
                                 <a class="isCart_<?php echo $f['id'];  ?>" onclick="wishList('<?php echo $f['id'];  ?>','<?php echo str_replace(str_split('\\/:*?"<>|#_'), ' ', $f['message_tags'][0]['name']);?>','<?php echo $f['full_picture'];  ?>');" style="cursor: pointer;">
                                     <span class="icon_heart_alt"></span>
