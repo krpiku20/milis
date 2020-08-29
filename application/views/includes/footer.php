@@ -47,12 +47,12 @@
                     </div>
                     <p>Mili's is an online exclusive platform where it is willing to offer you the finest of Indian handloom sarees. It aims to cater the best and provide the best so that customers need not to worry about the quality and price.</p>
                     <div class="footer__payment">
-                        <a><img class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-1.png" alt="Master Card"></a>
-                        <a><img class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-2.png" alt="Visa"></a>
-                        <a><img class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-3.png" alt="Net Banking"></a>
-                        <a><img class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-4.png" alt="Google Pay"></a>
-                        <a><img class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-5.png" alt="PayPal"></a>
-                        <a><img class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-6.png" alt="Western Union"></a>
+                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-1.png" alt="Master Card"></a>
+                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-2.png" alt="Visa"></a>
+                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-3.png" alt="Net Banking"></a>
+                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-4.png" alt="Google Pay"></a>
+                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-5.png" alt="PayPal"></a>
+                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-6.png" alt="Western Union"></a>
                     </div>
                 </div>
             </div>

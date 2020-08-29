@@ -1,4 +1,6 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); 
+header("Strict-Transport-Security:max-age=63072000");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/font-awesome.min.css" type="text/css">
@@ -39,6 +42,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="https://traditionalmili.com/assets/css/zoom/jquery.fancybox.css" />
     <link rel="stylesheet" type="text/css" href="https://traditionalmili.com/assets/css/zoom/xzoom.css" media="all" />
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f3faa62c8e5ad00121d28bd&product=sop' async='async'></script>
+    <script data-ad-client="ca-pub-6525996523626165" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <!--  oncontextmenu="return false;"  -->
 <body oncontextmenu="return false;">

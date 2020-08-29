@@ -7,27 +7,27 @@ $nowDate = time();
 ?>
 <?php if(!empty($f)){  ?>
 <?php if($f['attachments']['data'][0]['subattachments']['data'][0]['type'] == 'photo'){   ?>
-            <div class="col-lg-3 col-md-4 col-sm-6 mix">
+            <div class="col-lg-6 col-md-4 col-sm-6 mix">
                 <div class="product__item">
                     <div class="product__item__pic set-bg">
                         <div class="label new" id="wishNoStat_<?php echo $f['id'] ?>"><?php echo str_replace(str_split('\\/:*?"<>|#_'), ' ', $f['message_tags'][0]['name']);?>
                         </div>
                         <?php if(empty($cartId)){  ?>
-                        <div style="display:none;background-color: #dc3545;left: 220px;" id="wishStat_<?php echo $f['id'] ?>" class="label new">
+                        <div style="display:none;background-color: #000000;left: 150px;" id="wishStat_<?php echo $f['id'] ?>" class="label new">
                             <span class="icon_heart_alt"></span>
                         </div>
                         <?php } ?>
                         <?php foreach($cartId as $cart){ if($f['id'] == $cart['id']){ ?>
-                        <div style="background-color: #dc3545;left: 220px;" id="wishStat_<?php echo $f['id'] ?>" class="label new">
+                        <div style="background-color: #000000;left: 150px;" id="wishStat_<?php echo $f['id'] ?>" class="label new">
                             <span class="icon_heart_alt"></span>
                         </div>
                         <?php }} ?>
                         <?php if(round(($nowDate - $postDate)/(60*60*24)) <= 4){  ?>
                         <a target="_blank" href="<?php echo base_url();  ?>product_details?product=<?php echo $f['id'];  ?>">
-                            <img class = "lazy" src="<?php echo $f['full_picture'];?>" height="465" width="100%">
+                            <img class = "lazy" src="<?php echo $f['full_picture'];?>" width="720" height="720">
                         </a>
                         <?php }else{ ?>
-                            <img class = "lazy imgLay" src="<?php echo $f['full_picture'];?>" height="465" width="263">
+                            <img width="720" height="720" class = "lazy imgLay" src="<?php echo $f['full_picture'];?>" >
                             <div class="overlay_container">
                                 <div class="overlay">
                                     <div class="text">Saree is either sold out or out of stock. To know more WhatsApp me.</div>

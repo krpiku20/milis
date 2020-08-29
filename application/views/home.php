@@ -1,10 +1,13 @@
 <?php  defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- Discount Section Begin -->
-<div class="col-lg-12 text-center alert covid">
-    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-    Being committed to serve my customers in this <b>COVID-19</b> situation, Mili's is constantly adapting to the frequent changes so that my customers can continue to enjoy the service. STAY SAFE, STAY HEALTHY. 
-</div>
-<img class = "lazy" src="https://traditionalmili.com/assets/img/cover.png" id="banners">
+<img class = "lazy" src="https://traditionalmili.com/assets/img/cover.png" height="auto" width="1345" id="banners">
+<br>
+<div style="margin-top:10px;" class="sharethis-inline-share-buttons"></div>
+<br>
+<!-- <div class="col-lg-12 text-center alert covid">
+    Being committed to serve my customers in this <b>COVID-19</b> situation, Mili's is constantly adapting to the frequent changes so that my customers can continue to enjoy the service. STAY SAFE, STAY HEALTHY. <br>
+    <span class="closebtn"  style="text-align: center;" onclick="this.parentElement.style.display='none';">Close</span>
+</div> -->
 <section class="discount popup-overlay">
     <div class="container popup-content">
         <div class="row">
@@ -18,7 +21,7 @@
             <div class="col-lg-12 p-0">
                 <span style="color: #f44336;position: absolute;top: 15px;right: 30px;font-size: 14px;" class="closebtn" onclick="this.parentElement.style.display='none';">CLOSE</span>
                 <!-- <span style="color: red;" class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
-                <div class="discount__text" style="background-color: #f4f4f4">
+                <div class="discount__text" style="background:url('https://traditionalmili.com/assets/img/offer_cover.png') no-repeat">
                     <div class="discount__text__title">
                         <span>OFFER</span>
                         <h2>August 2020</h2>
@@ -26,7 +29,7 @@
                     </div>
                     <div class="discount__countdown" id="countdown-time">
                     </div>
-                    <a onclick="gallery();" style="cursor:pointer;">Shop now</a>
+                    <a style="color: #fff;" onclick="gallery();" style="cursor:pointer;">Shop now</a>
                 </div>
             </div>
         </div>
@@ -55,7 +58,7 @@
                 <a href="javascript:void(0);" onclick="previous();" id="previous" class="arrow" style="float: left; display: none;">Previous</a>
             </div> -->
             <div class="col-lg-2 col-md-2 text-center">
-                <img class = "lazy" src="https://traditionalmili.com/assets/img/loadinfo.net.gif" id="loader" style="display: none; margin-top: 0px;">
+                <img class = "lazy" src="https://traditionalmili.com/assets/img/loadinfo.net.gif" height="64" width="64" id="loader" style="display: none; margin-top: 0px;">
             </div>
             <div class="col-lg-5 col-md-5 text-center">
                 <a href="javascript:void(0);" onclick="next();" class="arrow" style="float: right">NEXT</a>
@@ -77,7 +80,9 @@
     </div>
 </section>
 <!-- Product Section End -->
-<div id="cookieConsent">
-    <div id="closeCookieConsent">x</div>
-    We use cookies 🍪 and location to ensure you get the best experience on our website. Read our <a href="<?php echo base_url();  ?>privacy_policy" target="_blank">Privacy Policy</a> and <a href="<?php echo base_url();  ?>terms_conditions" target="_blank">Terms and Conditions</a>. <a class="cookieConsentOK">Accept</a>
+<div class="cookie-disclaimer" style="text-align: center;">
+
+    We use cookies 🍪 and location on my website. Read my <a href="<?php echo base_url();  ?>privacy_policy" target="_blank">Privacy Policy</a> and <a href="<?php echo base_url();  ?>terms_conditions" target="_blank">Terms and Conditions</a>.    
+        <a style="cursor: pointer; color: #25d366;" onclick="this.parentElement.style.display='none';">Accept</a>&nbsp;|&nbsp;
+        <a style="cursor: pointer; color: #dc3545;" onclick="this.parentElement.style.display='none';">Decline</a>
 </div>

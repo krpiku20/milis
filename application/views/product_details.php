@@ -23,7 +23,7 @@
                     <div class="product__details__pic">
                         <div class="product__details__slider__content">
                             <div class="product__details__pic__slider">
-                                <img width="263" height="420" class="product__big__img xzoom5" id="xzoom-magnific" src="<?php echo $productView['full_picture'] ?>" alt="" xoriginal="<?php echo $productView['full_picture'] ?>">
+                                <img class="product__big__img xzoom5" id="xzoom-magnific" src="<?php echo $productView['full_picture'] ?>" alt="" xoriginal="<?php echo $productView['full_picture'] ?>">
                             </div>
                         </div>
                     </div>

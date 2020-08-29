@@ -55,6 +55,7 @@ class Mili_controller extends CI_Controller{
 	}
 	public function index($data = NULL){
 		$table = 'filter_name';
+		//
 		$data['filterTag'] = $this->mili_model->filterTag($table);
 		$this->load->template('home',$data);
 	}
@@ -71,14 +72,15 @@ class Mili_controller extends CI_Controller{
 		$this->load->template('feed',$data);
 	}
 	public function customer_reviews($data = NULL){
+	
 		$data['customerReviews'] = $this->mili_model->fetchFacebookPageReviews();
 		$this->load->template('customer_reviews',$data);
 	}
 	public function send_contact($data = NULL){
-		$name = trim($this->input->post("name"));
-		$email = trim($this->input->post("email"));
-		$phone = trim($this->input->post("phone"));
-		$message = trim($this->input->post("message"));
+		$name = $this->security->xss_clean(trim($this->input->post("name")));
+		$email = $this->security->xss_clean(trim($this->input->post("email")));
+		$phone = $this->security->xss_clean(trim($this->input->post("phone")));
+		$message = $this->security->xss_clean(trim($this->input->post("message")));
 	    $ipaddress = $_SERVER['REMOTE_ADDR'];
 		$json     = file_get_contents('http://ipinfo.io/'.$ipaddress.'/geo');
 		$json     = json_decode($json, true);
@@ -137,11 +139,11 @@ class Mili_controller extends CI_Controller{
 		$this->load->template('feedback',$data);
 	}
 	public function feedback_post($data = NULL){
-		$fullname = trim($this->input->post("fullname"));
-		$phoneno = trim($this->input->post("phoneno"));
-		$email = trim($this->input->post("email"));
-		$address = trim($this->input->post("address"));
-		$desc = trim($this->input->post("desc"));
+		$fullname = $this->security->xss_clean(trim($this->input->post("fullname")));
+		$phoneno = $this->security->xss_clean(trim($this->input->post("phoneno")));
+		$email = $this->security->xss_clean(trim($this->input->post("email")));
+		$address = $this->security->xss_clean(trim($this->input->post("address")));
+		$desc = $this->security->xss_clean(trim($this->input->post("desc")));
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$browser = $_SERVER['HTTP_USER_AGENT'];
 		$json     = file_get_contents('http://ipinfo.io/'.$ip.'/geo');
@@ -189,8 +191,8 @@ class Mili_controller extends CI_Controller{
 		}
 	}
 	public function display_data($info = NULL){
-		$value = trim($this->input->post("value"));
-		$url = trim($this->input->post("url"));
+		$value = $this->security->xss_clean(trim($this->input->post("value")));
+		$url = $this->security->xss_clean(trim($this->input->post("url")));
 		$graphNode = $this->graphNode;
 		$info['fbdata'] = $this->mili_model->filterData($graphNode);
 		$i = 0;
@@ -227,9 +229,9 @@ class Mili_controller extends CI_Controller{
 		print_r(json_encode($filterTag));	
 	}
 	public function add_wishlist($data = NULL){
-		$product_id = trim($this->input->post("product_id"));
-		$product_name = trim($this->input->post("product_name"));
-		$product_image = trim($this->input->post("product_image"));
+		$product_id = $this->security->xss_clean(trim($this->input->post("product_id")));
+		$product_name = $this->security->xss_clean(trim($this->input->post("product_name")));
+		$product_image = $this->security->xss_clean(trim($this->input->post("product_image")));
 		$insertArray = array(
 			'id' => $product_id,
 			'qty' => '1',
@@ -249,10 +251,12 @@ class Mili_controller extends CI_Controller{
 			}
 		}
 		$this->cart->insert($insertArray);
+	
 		$data['wishDetails'] = $this->cart->contents();	
 		$this->load->view('wishlist_tip',$data);
 	}
 	public function check_cart($data = NULL){	
+	
 		$data['wishDetails'] = $this->cart->contents();	
 		$this->load->view('wishlist_tip',$data);
 	}
@@ -270,12 +274,13 @@ class Mili_controller extends CI_Controller{
 		$this->load->template('wishlist',$data);
 	}
 	public function wishlist_update($data = NULL){
+	
 		$data['cartdetails'] = $this->cart->contents();
 		$this->load->view('wishlist_update',$data);
 	}
 	public function product_details($data = NULL){
 		$graphNode = $this->graphNode;
-		$productId = trim($this->input->get("product"));
+		$productId = $this->security->xss_clean(trim($this->input->get("product")));
 		$table = 'customer_reviews';
 		$table1 = 'product_likes';
 		$mac = $_SERVER['REMOTE_ADDR'];
@@ -296,13 +301,13 @@ class Mili_controller extends CI_Controller{
 		}
 	}
 	public function post_reviews(){
-		$productId = trim($this->input->post("productId"));
-		$fullname = trim($this->input->post("fullname"));
-		$phoneno = trim($this->input->post("phoneno"));
-		$email = trim($this->input->post("email"));
-		$address = trim($this->input->post("address"));
-		$desc = trim($this->input->post("desc"));
-		$rating = trim($this->input->post("rating"));
+		$productId = $this->security->xss_clean(trim($this->input->post("productId")));
+		$fullname = $this->security->xss_clean(trim($this->input->post("fullname")));
+		$phoneno = $this->security->xss_clean(trim($this->input->post("phoneno")));
+		$email = $this->security->xss_clean(trim($this->input->post("email")));
+		$address = $this->security->xss_clean(trim($this->input->post("address")));
+		$desc = $this->security->xss_clean(trim($this->input->post("desc")));
+		$rating = $this->security->xss_clean(trim($this->input->post("rating")));
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$browser = $_SERVER['HTTP_USER_AGENT'];
 		$json     = file_get_contents('http://ipinfo.io/'.$ip.'/geo');
@@ -358,17 +363,17 @@ class Mili_controller extends CI_Controller{
 		}
 	}
 	public function fetch_reviews(){
-		$productId = trim($this->input->post("productId"));
-		$limit = trim($this->input->post("limit"));
-		$end = trim($this->input->post("end"));
+		$productId = $this->security->xss_clean(trim($this->input->post("productId")));
+		$limit = $this->security->xss_clean(trim($this->input->post("limit")));
+		$end = $this->security->xss_clean(trim($this->input->post("end")));
 		$table = 'customer_reviews';
 		$data['productReviews'] = $this->mili_model->fetchProductReviews($table,$productId,$limit,$end);
 		$data['totalProductReviews'] = $this->mili_model->fetchTotalProductReviews($table,$productId);
 		$this->load->view('product_reviews',$data);
 	}
 	public function product_like(){
-		$productId = trim($this->input->post("productId"));
-		$like = trim($this->input->post("like"));
+		$productId = $this->security->xss_clean(trim($this->input->post("productId")));
+		$like = $this->security->xss_clean(trim($this->input->post("like")));
 		$mac = $_SERVER['REMOTE_ADDR'];
 		$browser = $_SERVER['HTTP_USER_AGENT'];
 		$json     = file_get_contents('http://ipinfo.io/'.$mac.'/geo');

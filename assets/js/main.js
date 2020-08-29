@@ -1,6 +1,6 @@
 /*  ---------------------------------------------------
-Template Name: Ashion
-Description: Ashion ecommerce template
+Website: Mili's
+Description: Online Boutique
 Author: Colorib
 Author URI: https://colorlib.com/
 Version: 1.0
@@ -11,35 +11,22 @@ Created: Colorib
 
 (function ($) {
 
-    /*------------------
-        Preloader
-    --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
 
-        /*------------------
-            Product filter
-        --------------------*/
         $('.filter__controls li').on('click', function () {
             $('.filter__controls li').removeClass('active');
             $(this).addClass('active');
         });
-        // if ($('.property__gallery').length > 0) {
-        //     var containerEl = document.querySelector('.property__gallery');
-        //     var mixer = mixitup(containerEl);
-        // }
+
     });
 
-    /*------------------
-        Background Set
-    --------------------*/
     $('.set-bg').each(function () {
         var bg = $(this).data('setbg');
         $(this).css('background-image', 'url(' + bg + ')');
     });
 
-    //Search Switch
     $('.search-switch').on('click', function () {
         $('.search-model').fadeIn(400);
     });
@@ -50,7 +37,7 @@ Created: Colorib
         });
     });
 
-    //Canvas Menu
+
     $(".canvas__open").on('click', function () {
         $(".offcanvas-menu-wrapper").addClass("active");
         $(".offcanvas-menu-overlay").addClass("active");
@@ -61,17 +48,11 @@ Created: Colorib
         $(".offcanvas-menu-overlay").removeClass("active");
     });
 
-    /*------------------
-        Navigation
-    --------------------*/
     $(".header__menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
 
-    /*------------------
-        Accordin Active
-    --------------------*/
     $('.collapse').on('shown.bs.collapse', function () {
         $(this).prev().addClass('active');
     });
@@ -79,40 +60,6 @@ Created: Colorib
     $('.collapse').on('hidden.bs.collapse', function () {
         $(this).prev().removeClass('active');
     });
-
-    /*--------------------------
-        Banner Slider
-    ----------------------------*/
-    // $(".banner__slider").owlCarousel({
-    //     loop: true,
-    //     margin: 0,
-    //     items: 1,
-    //     dots: true,
-    //     smartSpeed: 1200,
-    //     autoHeight: false,
-    //     autoplay: true
-    // });
-
-    /*--------------------------
-        Product Details Slider
-    ----------------------------*/
-    // $(".product__details__pic__slider").owlCarousel({
-    //     loop: false,
-    //     margin: 0,
-    //     items: 1,
-    //     dots: false,
-    //     nav: true,
-    //     navText: ["<i class='arrow_carrot-left'></i>","<i class='arrow_carrot-right'></i>"],
-    //     smartSpeed: 1200,
-    //     autoHeight: false,
-    //     autoplay: false,
-    //     mouseDrag: false,
-    //     startPosition: 'URLHash'
-    // }).on('changed.owl.carousel', function(event) {
-    //     var indexNum = event.item.index + 1;
-    //     product_thumbs(indexNum);
-    // });
-
     function product_thumbs (num) {
         var thumbs = document.querySelectorAll('.product__thumb a');
         thumbs.forEach(function (e) {
@@ -123,14 +70,6 @@ Created: Colorib
         })
     }
 
-
-    /*------------------
-        Magnific
-    --------------------*/
-
-    /*------------------
-        CountDown
-    --------------------*/
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -145,32 +84,9 @@ Created: Colorib
     var timerdate = mm + '/' + dd + '/' + yyyy;
     var timerdate = "2020/08/31" 
     $("#countdown-time").countdown(timerdate, function(event) {
-        $(this).html(event.strftime("<div class='countdown__item'><span>%D</span> <p>Day</p> </div>" + "<div class='countdown__item'><span>%H</span> <p>Hour</p> </div>" + "<div class='countdown__item'><span>%M</span> <p>Min</p> </div>" + "<div class='countdown__item'><span>%S</span> <p>Sec</p> </div>"));
+        $(this).html(event.strftime("<div class='countdown__item' ><span style='color: #fff !important;'>%D</span> <p style='color: #fff !important;'>Day</p> </div>" + "<div class='countdown__item' style='color: #fff !important;'><span style='color: #fff !important;'>%H</span> <p style='color: #fff !important;'>Hour</p> </div>" + "<div class='countdown__item' style='color: #fff !important;'><span style='color: #fff !important;'>%M</span> <p style='color: #fff !important;'>Min</p> </div>" + "<div class='countdown__item' style='color: #fff !important;'><span style='color: #fff !important;'>%S</span> <p style='color: #fff !important;'>Sec</p> </div>"));
     });
-    /*-------------------
-        Range Slider
-    --------------------- */
-    // var rangeSlider = $(".price-range"),
- //    minamount = $("#minamount"),
- //    maxamount = $("#maxamount"),
- //    minPrice = rangeSlider.data('min'),
- //    maxPrice = rangeSlider.data('max');
- //    rangeSlider.slider({
- //    range: true,
- //    min: minPrice,
- //    max: maxPrice,
- //    values: [minPrice, maxPrice],
- //    slide: function (event, ui) {
- //        minamount.val('$' + ui.values[0]);
- //        maxamount.val('$' + ui.values[1]);
- //        }
- //    });
- //    minamount.val('$' + rangeSlider.slider("values", 0));
- //    maxamount.val('$' + rangeSlider.slider("values", 1));
 
-    /*------------------
-        Single Product
-    --------------------*/
     $('.product__thumb .pt').on('click', function(){
         var imgurl = $(this).data('imgbigurl');
         var bigImg = $('.product__big__img').attr('src');
@@ -179,9 +95,6 @@ Created: Colorib
         }
     });
     
-    /*-------------------
-        Quantity change
-    --------------------- */
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn">-</span>');
     proQty.append('<span class="inc qtybtn">+</span>');
@@ -201,9 +114,6 @@ Created: Colorib
         $button.parent().find('input').val(newVal);
     });
     
-    /*-------------------
-        Radio Btn
-    --------------------- */
     $(".size__btn label").on('click', function () {
         $(".size__btn label").removeClass('active');
         $(this).addClass('active');
@@ -212,11 +122,6 @@ Created: Colorib
 })(jQuery);
 //============CUSTOM FUNCTION=================//
 $("img.lazy").lazyload({effect: "slideDown"});   
-    /*
-    * Disable right-click of mouse, F12 key, and save key combinations on page
-    * By Arthur Gareginyan (https://www.arthurgareginyan.com)
-    * For full source code, visit https://mycyberuniverse.com
-    */
 window.onload = function() {
     document.addEventListener("contextmenu", function(e){
       e.preventDefault();
@@ -251,7 +156,58 @@ window.onload = function() {
   };
 
 $(document).ready(function(){
+var cookie = false;
+    var cookieContent = $('.cookie-disclaimer');
 
+    checkCookie();
+
+    if (cookie === true) {
+      cookieContent.hide();
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toGMTString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+
+    function checkCookie() {
+      var user = getCookie("username");
+      if (user !== "") {
+        cookie = true;
+      } else {
+        if (user !== "" && user !== null) {
+          setCookie("cvalue", "cvalue", 365);
+        }
+      }
+    }
+
+    function deleteCookie() {
+      setCookie('cname', '', -1);
+    }
+       
+    //set cookie on click
+    $('.accept-cookie').click(function () {
+      setCookie("cname", "cvalue", 365);
+      alert("cookie accepted!");
+      cookieContent.hide();
+    });
+    //delete cookie on click
+    $('.decline-cookie').click(function () {
+        alert("cookie declined!");
+        deleteCookie();
+    });
     var value = '';
     displayData(value);       
     wishListCheck();
@@ -294,7 +250,6 @@ function visits(){
             success: function(response){
                 $("#visitLoader").hide();
                 $("#visitCount").html(response);
-                 //$("#visitCount2").html(response);
             }
     });   
 }
@@ -348,7 +303,6 @@ function contact(){
 }
 
 function next(){
-    //$("#previous").show();
     $("#loader").show();
     var value= $("#filterWrite").val();
     var url = $("#nextData").val();
@@ -364,7 +318,6 @@ function next(){
                         $("#loadButton").show();
                         $("#loadButton").text('Not found '+value+' here? Try Next.');
                         $("#loader").hide();
-
                     }else{
                         $("#loadButton").hide();
                         $("#loader").hide();
@@ -394,7 +347,6 @@ function displayData(value){
                         $("#loadButton").show();
                         $("#loadButton").text('Not found '+value+' here? Try Next.');
                         $("#loader").hide();
-                        
                     }else{
                         $("#loadButton").hide();
                         $("#loader").hide();
