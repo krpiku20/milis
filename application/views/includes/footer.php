@@ -43,16 +43,16 @@
             <div class="col-lg-4 col-md-6 col-sm-7">
                 <div class="footer__about">
                     <div class="footer__logo">
-                        <a href="<?php echo base_url();  ?>"><img class = "lazy" src="https://traditionalmili.com/assets/img/download.png" alt="Mili's"></a>
+                        <a href="<?php echo base_url();  ?>"><img class = "lazy" src="<?php echo base_url();  ?>assets/img/download.png" alt="Mili's"></a>
                     </div>
                     <p>Mili's is an online exclusive platform where it is willing to offer you the finest of Indian handloom sarees. It aims to cater the best and provide the best so that customers need not to worry about the quality and price.</p>
                     <div class="footer__payment">
-                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-1.png" alt="Master Card"></a>
-                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-2.png" alt="Visa"></a>
-                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-3.png" alt="Net Banking"></a>
-                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-4.png" alt="Google Pay"></a>
-                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-5.png" alt="PayPal"></a>
-                        <a><img height="40" width="40" class = "lazy" src="https://traditionalmili.com/assets/img/payment/payment-6.png" alt="Western Union"></a>
+                        <a><img height="40" width="40" class = "lazy" src="<?php echo base_url();  ?>assets/img/payment/payment-1.png" alt="Master Card"></a>
+                        <a><img height="40" width="40" class = "lazy" src="<?php echo base_url();  ?>assets/img/payment/payment-2.png" alt="Visa"></a>
+                        <a><img height="40" width="40" class = "lazy" src="<?php echo base_url();  ?>assets/img/payment/payment-3.png" alt="Net Banking"></a>
+                        <a><img height="40" width="40" class = "lazy" src="<?php echo base_url();  ?>assets/img/payment/payment-4.png" alt="Google Pay"></a>
+                        <a><img height="40" width="40" class = "lazy" src="<?php echo base_url();  ?>assets/img/payment/payment-5.png" alt="PayPal"></a>
+                        <a><img height="40" width="40" class = "lazy" src="<?php echo base_url();  ?>assets/img/payment/payment-6.png" alt="Western Union"></a>
                     </div>
                 </div>
             </div>
@@ -124,27 +124,27 @@
 <!-- <script defer="defer" src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!-- <script defer="defer" src="https://traditionalmili.com/assets/js/bootstrap.min.js"></script> -->
+<!-- <script defer="defer" src="<?php echo base_url();  ?>assets/js/bootstrap.min.js"></script> -->
 
 <script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-<!-- <script defer="defer" src="https://traditionalmili.com/assets/js/jquery.magnific-popup.min.js"></script> -->
-<!-- <script defer="defer" src="https://traditionalmili.com/assets/js/jquery-ui.min.js"></script> -->
-<!-- <script defer="defer" src="https://traditionalmili.com/assets/js/mixitup.min.js"></script> -->
-<script defer="defer" src="https://traditionalmili.com/assets/js/jquery.countdown.min.js"></script>
-<script defer="defer" src="https://traditionalmili.com/assets/js/jquery.slicknav.js"></script>
-<!-- <script src="https://traditionalmili.com/assets/js/owl.carousel.min.js"></script> -->
-<!-- <script defer="defer" src="https://traditionalmili.com/assets/js/jquery.nicescroll.min.js"></script> -->
-<script defer="defer" src="https://traditionalmili.com/assets/js/main.js"></script>
-<script defer="defer" src="https://traditionalmili.com/assets/js/scrollpagination.js"></script>
+<!-- <script defer="defer" src="<?php echo base_url();  ?>assets/js/jquery.magnific-popup.min.js"></script> -->
+<!-- <script defer="defer" src="<?php echo base_url();  ?>assets/js/jquery-ui.min.js"></script> -->
+<!-- <script defer="defer" src="<?php echo base_url();  ?>assets/js/mixitup.min.js"></script> -->
+<script defer="defer" src="<?php echo base_url();  ?>assets/js/jquery.countdown.min.js"></script>
+<script defer="defer" src="<?php echo base_url();  ?>assets/js/jquery.slicknav.js"></script>
+<!-- <script src="<?php echo base_url();  ?>assets/js/owl.carousel.min.js"></script> -->
+<!-- <script defer="defer" src="<?php echo base_url();  ?>assets/js/jquery.nicescroll.min.js"></script> -->
+<script defer="defer" src="<?php echo base_url();  ?>assets/js/main.js"></script>
+<script defer="defer" src="<?php echo base_url();  ?>assets/js/scrollpagination.js"></script>
 
 <!-- Zoom Effects -->
-<script defer="defer" src="https://traditionalmili.com/assets/js/zoom/modernizr.js"></script>
-<script defer="defer" type="text/javascript" src="https://traditionalmili.com/assets/js/zoom/xzoom.min.js"></script>
-<script defer="defer" type="text/javascript" src="https://traditionalmili.com/assets/js/zoom/jquery.hammer.min.js"></script>  
-<script defer="defer" type="text/javascript" src="https://traditionalmili.com/assets/js/zoom/jquery.fancybox.js"></script>
-<script defer="defer" type="text/javascript" src="https://traditionalmili.com/assets/js/zoom/magnific-popup.js"></script>
-<script defer="defer" src="https://traditionalmili.com/assets/js/zoom/foundation.min.js"></script>
-<script defer="defer" src="https://traditionalmili.com/assets/js/zoom/setup.js"></script>
+<script defer="defer" src="<?php echo base_url();  ?>assets/js/zoom/modernizr.js"></script>
+<script defer="defer" type="text/javascript" src="<?php echo base_url();  ?>assets/js/zoom/xzoom.min.js"></script>
+<script defer="defer" type="text/javascript" src="<?php echo base_url();  ?>assets/js/zoom/jquery.hammer.min.js"></script>  
+<script defer="defer" type="text/javascript" src="<?php echo base_url();  ?>assets/js/zoom/jquery.fancybox.js"></script>
+<script defer="defer" type="text/javascript" src="<?php echo base_url();  ?>assets/js/zoom/magnific-popup.js"></script>
+<script defer="defer" src="<?php echo base_url();  ?>assets/js/zoom/foundation.min.js"></script>
+<script defer="defer" src="<?php echo base_url();  ?>assets/js/zoom/setup.js"></script>
 
 <button type="button" class="btn btn-danger scroll-top"><i class="fa fa-arrow-up" aria-hidden="true"></i>
 </button>

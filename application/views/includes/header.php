@@ -20,7 +20,7 @@ header("Strict-Transport-Security:max-age=63072000");
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv='content-language' content='en-in'>
     <title>Mili's | Boutique</title>
-    <link rel="icon" href="https://traditionalmili.com/assets/img/milifav.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="<?php echo base_url();  ?>assets/img/milifav.png" type="image/png" sizes="96x96">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
@@ -31,16 +31,16 @@ header("Strict-Transport-Security:max-age=63072000");
     <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="https://traditionalmili.com/assets/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="https://traditionalmili.com/assets/css/zoom/magnific-popup.css" type="text/css">
-    <!-- <link rel="stylesheet" href="https://traditionalmili.com/assets/css/owl.carousel.min.css" type="text/css"> -->
-    <link rel="stylesheet" href="https://traditionalmili.com/assets/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="https://traditionalmili.com/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/zoom/magnific-popup.css" type="text/css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/owl.carousel.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/style.css" type="text/css">
     <!-- Zoom Effects -->
-    <link rel="stylesheet" href="https://traditionalmili.com/assets/css/zoom/normalize.css" />
-    <link rel="stylesheet" href="https://traditionalmili.com/assets/css/zoom/demo.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="https://traditionalmili.com/assets/css/zoom/jquery.fancybox.css" />
-    <link rel="stylesheet" type="text/css" href="https://traditionalmili.com/assets/css/zoom/xzoom.css" media="all" />
+    <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/zoom/normalize.css" />
+    <link rel="stylesheet" href="<?php echo base_url();  ?>assets/css/zoom/demo.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="<?php echo base_url();  ?>assets/css/zoom/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();  ?>assets/css/zoom/xzoom.css" media="all" />
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f3faa62c8e5ad00121d28bd&product=sop' async='async'></script>
     <script data-ad-client="ca-pub-6525996523626165" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
@@ -73,7 +73,7 @@ header("Strict-Transport-Security:max-age=63072000");
             </li>
         </ul>
         <div class="offcanvas__logo">
-            <a href="<?php echo base_url();  ?>"><img class = "lazy" src="https://traditionalmili.com/assets/img/download.png" height="110" width="220" alt="mili's"></a>
+            <a href="<?php echo base_url();  ?>"><img class = "lazy" src="<?php echo base_url();  ?>assets/img/download.png" height="110" width="220" alt="mili's"></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <!-- <div class="offcanvas__auth">
@@ -87,7 +87,7 @@ header("Strict-Transport-Security:max-age=63072000");
             <div class="row">
                 <div class="col-xl-3 col-lg-2">
                     <div class="header__logo">
-                        <a href="<?php echo base_url();  ?>"><img class = "lazy" src="https://traditionalmili.com/assets/img/download.png" height="50" width="120" alt="mili's">
+                        <a href="<?php echo base_url();  ?>"><img class = "lazy" src="<?php echo base_url();  ?>assets/img/download.png" height="50" width="120" alt="mili's">
                         </a>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ header("Strict-Transport-Security:max-age=63072000");
                         <div class="header__right__auth">
                             <b> Visits:&nbsp;<span id="visitCount" >
                                 <a style="display: none" id="visitLoader">
-                                    <img style="display: inline-block; margin-bottom: 5px" class = "lazy" src="https://traditionalmili.com/assets/img/3.gif" height="20" width="20" alt="mili's">
+                                    <img style="display: inline-block; margin-bottom: 5px" class = "lazy" src="<?php echo base_url();  ?>assets/img/3.gif" height="20" width="20" alt="mili's">
                                 </a>
                             </span></b>
                         </div>
