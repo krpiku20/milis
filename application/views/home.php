@@ -1,6 +1,6 @@
 <?php  defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- Discount Section Begin -->
-<img class = "lazy" src="https://traditionalmili.com/assets/img/cover.png" height="auto" width="1345" id="banners">
+<img class = "lazy" src="https://traditionalmili.com/assets/img/cover.png" height="auto" width="1345" id="banners" alt="Mili's Cover">
 <br>
 <div style="margin-top:10px;" class="sharethis-inline-share-buttons"></div>
 <br>
@@ -8,19 +8,11 @@
     Being committed to serve my customers in this <b>COVID-19</b> situation, Mili's is constantly adapting to the frequent changes so that my customers can continue to enjoy the service. STAY SAFE, STAY HEALTHY. <br>
     <span class="closebtn"  style="text-align: center;" onclick="this.parentElement.style.display='none';">Close</span>
 </div> -->
-<section class="discount popup-overlay">
+<!-- <section class="discount popup-overlay">
     <div class="container popup-content">
         <div class="row">
-            <!-- <div class="col-lg-6 p-0">
-                <div class="discount__pic">
-                    <img class="mySlides" src="https://traditionalmili.com/assets/img/1.jpg" style="width:100%">
-                    <img class="mySlides" src="https://traditionalmili.com/assets/img/2.jpg" style="width:100%">
-                    <img class="mySlides" src="https://traditionalmili.com/assets/img/3.jpg" style="width:100%">
-                </div>
-            </div> -->
             <div class="col-lg-12 p-0">
                 <span style="color: #f44336;position: absolute;top: 15px;right: 30px;font-size: 14px;" class="closebtn" onclick="this.parentElement.style.display='none';">CLOSE</span>
-                <!-- <span style="color: red;" class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
                 <div class="discount__text" style="background:url('https://traditionalmili.com/assets/img/offer_cover.png') no-repeat">
                     <div class="discount__text__title">
                         <span>OFFER</span>
@@ -34,7 +26,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Discount Section End -->
 <!-- Product Section Begin -->
 <section class="product spad">
@@ -43,9 +35,9 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 text-center">
                 <ul class="filter__controls">
-                    <li id="filterList" class="active"><a onclick="displayData('');"><b>All</b></a></li>
+                    <li id="filterList" class="active"><a style="color: #000 !important;" onclick="displayData('');"><b>All</b></a></li>
                     <?php foreach($filterTag as $filter){   ?>
-                        <li id="filterList"><a onclick="displayData('<?php echo $filter->name ?>');"><?php echo ucfirst($filter->name) ?></a></li>
+                        <li id="filterList"><a style="color: #000 !important;" onclick="displayData('<?php echo $filter->name ?>');"><?php echo ucfirst($filter->name) ?></a></li>
                     <?php } ?>
                 </ul>
             </div>
@@ -61,7 +53,7 @@
                 <img class = "lazy" src="https://traditionalmili.com/assets/img/loadinfo.net.gif" height="64" width="64" id="loader" style="display: none; margin-top: 0px;">
             </div>
             <div class="col-lg-5 col-md-5 text-center">
-                <a href="javascript:void(0);" onclick="next();" class="arrow" style="float: right">NEXT</a>
+                <a href="javascript:void(0);" onclick="next();" class="arrow" style="float: right"><b>NEXT</b></a>
             </div>
             <div class="col-lg-12 text-center">&nbsp;</div>  
         </div>
@@ -82,7 +74,6 @@
 <!-- Product Section End -->
 <div class="cookie-disclaimer" style="text-align: center;">
 
-    We use cookies 🍪 and location on my website. Read my <a href="<?php echo base_url();  ?>privacy_policy" target="_blank">Privacy Policy</a> and <a href="<?php echo base_url();  ?>terms_conditions" target="_blank">Terms and Conditions</a>.    
-        <a style="cursor: pointer; color: #25d366;" onclick="this.parentElement.style.display='none';">Accept</a>&nbsp;|&nbsp;
-        <a style="cursor: pointer; color: #dc3545;" onclick="this.parentElement.style.display='none';">Decline</a>
+    Cookies 🍪 and Location are used on my website. Read my <a href="https://www.cookiepolicygenerator.com/live.php?token=SjvKmu8DAeW5rsX4RSny1GhTaqxMxLIK" target="_blank" rel="noreferrer">Cookie Policies</a>.    <br>
+        <button class="btn btn-success" style="cursor: pointer; color: #FFF;" onclick="this.parentElement.style.display='none';">Accept</button>
 </div>

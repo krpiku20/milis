@@ -18,7 +18,7 @@
 <section class="product spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-4">
+            <div class="col-lg-12 col-md-12">
                 <div class="section-title">
                     <h4>Mili’s - An Online Boutique By Mili</h4>
                 </div>

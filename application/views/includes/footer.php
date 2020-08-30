@@ -15,7 +15,7 @@
                 <div class="services__item">
                     <i class="fa fa-money"></i>
                     <h6>Money Back Guarantee</h6>
-                    <p>Read <a href="https://traditionalmili.com/exchange_policy">Exchange Policy</a></p>
+                    <p>Read <a href="<?php echo base_url();  ?>exchange_policy">Exchange Policy</a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -63,7 +63,7 @@
                         <li <?php if($this->uri->segment(1) == 'about_milis') echo 'class="bold"';  ?>><a href="<?php echo base_url(); ?>about_milis">About Mili's</a></li>
                         <li <?php if($this->uri->segment(1) == 'contact') echo 'class="bold"';  ?>><a href="<?php echo base_url(); ?>contact">Contact</a></li>
                         <li <?php if($this->uri->segment(1) == 'feed') echo 'class="bold"';  ?>><a href="<?php echo base_url(); ?>feed">Feed</a></li>
-                        <li><a href="https://traditionalmili.in" target="_blank">Blog</a>
+                        <li><a href="https://traditionalmili.in" target="_blank" rel="noreferrer">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -92,10 +92,10 @@
 
                     <div class="footer__social text-center">
                         <br>
-                        <a href="https://www.facebook.com/mili.traditional" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://twitter.com/traditionalmili" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/milistradition/" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://in.pinterest.com/milisarkar2019/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com/mili.traditional" target="_blank" rel="noreferrer"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/traditionalmili" target="_blank" rel="noreferrer"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/milistradition/" target="_blank" rel="noreferrer"><i class="fa fa-instagram"></i></a>
+                        <a href="https://in.pinterest.com/milisarkar2019/" target="_blank" rel="noreferrer"><i class="fa fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             <div class="col-lg-12">
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 <div class="footer__copyright__text">
-                    <p>Copyright &copy; Mili's <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                    <p>Copyright &copy; Mili's <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noreferrer">Colorlib</a></p>
                     
                 </div>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

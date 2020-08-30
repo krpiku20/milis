@@ -97,7 +97,7 @@ header("Strict-Transport-Security:max-age=63072000");
                             <li <?php if($this->uri->segment(1) == '') echo 'class="active"';  ?>><a href="<?php echo base_url(); ?>">Home</a></li>
                             <li <?php if($this->uri->segment(1) == 'about_milis') echo 'class="active"';  ?>><a href="<?php echo base_url(); ?>about_milis">About Mili's</a></li>
                             <li <?php if($this->uri->segment(1) == 'feed') echo 'class="active"';  ?>><a href="<?php echo base_url(); ?>feed">Feed</a></li>
-                            <li><a href="https://traditionalmili.in" target="_blank">Blog</a></li>
+                            <li><a href="https://traditionalmili.in" target="_blank" rel="noreferrer">Blog</a></li>
                             <li <?php if($this->uri->segment(1) == 'contact') echo 'class="active"';  ?>><a href="<?php echo base_url(); ?>contact">Contact</a></li>
                             <li <?php if($this->uri->segment(1) == 'customer_reviews') echo 'class="active"';  ?>><a href="<?php echo base_url(); ?>customer_reviews">Customers' Reviews</a></li>
                         </ul>
@@ -106,7 +106,7 @@ header("Strict-Transport-Security:max-age=63072000");
                 <div class="col-lg-3">
                     <div class="header__right">
                         <div class="header__right__auth">
-                            <b> Total Visits:&nbsp;<span id="visitCount" >
+                            <b> Visits:&nbsp;<span id="visitCount" >
                                 <a style="display: none" id="visitLoader">
                                     <img style="display: inline-block; margin-bottom: 5px" class = "lazy" src="https://traditionalmili.com/assets/img/3.gif" height="20" width="20" alt="mili's">
                                 </a>

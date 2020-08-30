@@ -118,13 +118,16 @@ ol {
 	padding: 0;
 	margin: 0;
 }
-
+.row{
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
 /*---------------------
   Helper CSS
 -----------------------*/
 .text-center{
-	text-align: center;
-	vertical-align: middle;
+	text-align: center !important;
+	vertical-align: middle !important;
 }
 .imgLay{
 	opacity: 1;
@@ -3798,7 +3801,7 @@ ol {
   bottom: 0;
   left: 0;
   z-index: 99;
-  height: 40px;
+  height: 100px;
   position: fixed;
 }  
 .container {
@@ -3890,8 +3893,8 @@ ol {
 
 .arrow{
 	text-align: center;
-      width: 180px;
-      height: 25px;
+      width: 90px;
+      height: 23px;
       font-size: 100%;
       cursor: pointer;
       border-radius: 0;
@@ -3967,7 +3970,7 @@ ol {
   /*Hides pop-up when there is no "active" class*/
   visibility: hidden;
   position: absolute;
-  top: 23.4%;
+  top: 22.3%;
   width: 100%;
   height: auto;
 }
@@ -3988,4 +3991,20 @@ ol {
   /*Shows pop-up content when "active" class is present */
   visibility: visible;
   z-index: 99;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
 }

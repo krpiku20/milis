@@ -48,9 +48,24 @@ class Mili_model extends CI_Model{
         		$url = $url;
         	}
         }
-        $json_object = $this->fetchUrl($url);
-        $graphNode = json_decode($json_object, true);
-        return $graphNode;
+	    $cacheFile = APPPATH.'cache' . DIRECTORY_SEPARATOR . md5(@$url);
+	    if (file_exists($cacheFile)){
+	        $fh = fopen($cacheFile, 'r');
+	        $cacheTime = trim(fgets($fh));
+	        if ($cacheTime > strtotime('-30 minutes')){
+	        	return json_decode(stream_get_contents($fh), true);
+	        }
+		        fclose($fh);
+		        unlink($cacheFile);
+	    }
+
+		    $json = $this->fetchUrl($url);
+		    $graphNode = json_decode($json, true);
+		    $fh = fopen($cacheFile, 'w');
+		    fwrite($fh, time() . "\n");
+		    fwrite($fh, $json);
+		    fclose($fh);
+	        return $graphNode;
 	}
 	function filterData($graphNode){
 		return $graphNode;

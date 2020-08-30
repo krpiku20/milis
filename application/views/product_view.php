@@ -23,11 +23,11 @@ $nowDate = time();
                         </div>
                         <?php }} ?>
                         <?php if(round(($nowDate - $postDate)/(60*60*24)) <= 4){  ?>
-                        <a target="_blank" href="<?php echo base_url();  ?>product_details?product=<?php echo $f['id'];  ?>">
-                            <img class = "lazy" src="<?php echo $f['full_picture'];?>" width="720" height="720">
+                        <a target="_blank" rel="noreferrer" href="<?php echo base_url();  ?>product_details?product=<?php echo $f['id'];  ?>">
+                            <img class = "lazy" src="<?php echo $f['full_picture'];?>" width="720" height="720" alt="<?php echo str_replace(str_split('\\/:*?"<>|#_'), ' ', $f['message_tags'][0]['name']);?>">
                         </a>
                         <?php }else{ ?>
-                            <img width="720" height="720" class = "lazy imgLay" src="<?php echo $f['full_picture'];?>" >
+                            <img width="720" height="720" class = "lazy imgLay" src="<?php echo $f['full_picture'];?>" alt="<?php echo str_replace(str_split('\\/:*?"<>|#_'), ' ', $f['message_tags'][0]['name']);?>" >
                             <div class="overlay_container">
                                 <div class="overlay">
                                     <div class="text">Saree is either sold out or out of stock. To know more WhatsApp me.</div>
@@ -36,7 +36,7 @@ $nowDate = time();
                         <?php } ?>
                         <ul class="product__hover">
                             <li>
-                                <a target="_blank" href="<?php echo $f['full_picture'];  ?>" class="image-popup">
+                                <a target="_blank" rel="noreferrer" href="<?php echo $f['full_picture'];  ?>" class="image-popup">
                                     <span class="arrow_expand"></span>
                                 </a>
                             </li>
@@ -48,7 +48,7 @@ $nowDate = time();
                             </li>
                             <?php } ?>
                             <li>
-                                <a href="https://wa.me/+918250813064?text=https://www.facebook.com/100722371551069/posts/<?php echo str_replace('100722371551069_', '', $f['id']); ?>/ from Mili's" target="_blank" class="cart-btn1"><i class="fa fa-whatsapp"></i></a>
+                                <a href="https://wa.me/+918250813064?text=https://www.facebook.com/100722371551069/posts/<?php echo str_replace('100722371551069_', '', $f['id']); ?>/ from Mili's" target="_blank" rel="noreferrer" class="cart-btn1"><i class="fa fa-whatsapp"></i></a>
                                 </a>
                             </li>
                         </ul>
